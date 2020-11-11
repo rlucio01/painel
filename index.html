@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!--<section>
+					<img data-src="Logo.png">
+				</section>-->
+				
+				<section>
+					<h2>Plantão de hoje</h2>
+					<table>
+						<tbody>
+							<tr>
+								<th>Médicos</th>
+								<th>Clínica Médica</th>
+								<th>9</th>
+							</tr>
+						
+						
+							<tr>
+								<th>.</th>
+								<th>Clínica Geral</th>
+								<th>3</th>
+							</tr>
+							<tr>
+								<th>.</th>
+								<th>Ortopedia</th>
+								<th>2</th>
+							</tr>
+				
+							<tr>
+								<th>Enfermagem</th>
+								<th>Enfermeiros</th>
+								<th>3</th>
+							</tr>
+							<tr>
+								<th>.</th>
+								<th>Téc. Enfermagem</th>
+								<th>4</th>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<br>
+					<small>Estamos todos trabalhando de forma a garantir a segurança no seu atendimento com o menor tempo possível de espera.</small>
+				</section>
+
+				<section> 
+					<h3>Nas últimas 24 horas realizamos 300 antendimentos</h3>
+					<br>
+					Com volume de atendimentos de 8.000 pacientes/mês, trabalhamos com TRIAGEM de risco priorizando os casos mais graves de forma a manter a segurança de nossos clientes. Isto pode demandar um tempo de espera maior em algumas situações de menor risco.
+					<br>
+					<br>
+					<small>Nossa equipe de plantão está trabalhando de forma que o tempo de espera seja o menor possível.</small>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			// Slide every five seconds
+			Reveal.initialize({
+  				autoSlide: 5000,
+  				loop: true
+			});
+		</script>
+	</body>
+</html>
